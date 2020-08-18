@@ -1,0 +1,9 @@
+    {% block content %}
+    
+    <form action='' method='POST' style="align: center">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <input type="submit" value='Enter'>
+    </form>
+
+    {% endblock %}

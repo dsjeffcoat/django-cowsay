@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    <h1 class="display-4">That Cow Said What?</h1>
+    <p class="lead">Enter some text below and see what the cow will say back to you.</p>
+    </div>
+</div>
+<div class="container">
+    <h1 style="text-align: center">CowSay What?</h1>
+    <hr class="my-4">
+    <div class='container container-center'>
+        <p style="font-weight: bold">Look at what the Cow said!</p>
+        <pre>{{ cow_moo }}</pre>
+    </div>
+    {% include 'generic_form.html' %}
+</div>
+
+{% endblock  %}
+
